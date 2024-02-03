@@ -48,7 +48,7 @@
             </ScrollViewer>
 
             <Grid Grid.Column="0" Margin="0,0,10,0">
-                <!-- todo: no items in the collection.. check why -->
+                <!-- todo: no items in the collection.. (only on rider.. ok with vs2022) check why -->
                 <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="428.302"
                          ItemTemplate="{DynamicResource ItemTemplate}" ItemsSource="{Binding Collection}"
                          Margin="10.378,9.905,0,0" VerticalAlignment="Top" Width="124.528" />

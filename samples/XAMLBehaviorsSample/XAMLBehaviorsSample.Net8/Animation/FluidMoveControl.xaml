@@ -39,7 +39,6 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                 <StackPanel x:Name="Panel" Grid.Row="0">
-                    <!-- todo: This does not seem to work.. try to find out why -->
                     <Behaviors:Interaction.Behaviors>
                         <Behaviors:FluidMoveBehavior Duration="00:00:01" AppliesTo="Children">
                             <Behaviors:FluidMoveBehavior.EaseY>
