@@ -21,6 +21,42 @@
         <SubType>Designer</SubType>
         <Generator>MSBuild:Compile</Generator>
       </Page>
+      <Page Update="Animation\ControlStoryboardControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Animation\FluidMoveControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Animation\FluidMoveSetTagControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Animation\MouseDragElementControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Animation\TouchBehaviorControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="SampleData\SampleDataSource\SampleDataSource.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\src\Microsoft.Xaml.Behaviors\Microsoft.Xaml.Behaviors.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image01.png" />
+      <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image02.png" />
+      <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image03.png" />
+      <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image04.png" />
+      <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image05.png" />
     </ItemGroup>
 
 </Project>
