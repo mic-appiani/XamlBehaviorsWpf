@@ -45,6 +45,34 @@
         <Generator>MSBuild:Compile</Generator>
         <SubType>Designer</SubType>
       </Page>
+      <Page Update="Condition\CallMethodControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Condition\ChangePropertyControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Condition\GoToStateControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Condition\InvokeCommandControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Condition\LaunchUriControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Condition\PlaySoundControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
+      <Page Update="Condition\RemoveElementControl.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:Compile</Generator>
+      </Page>
     </ItemGroup>
 
     <ItemGroup>
@@ -57,6 +85,8 @@
       <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image03.png" />
       <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image04.png" />
       <Resource Include="SampleData\SampleDataSource\SampleDataSource_Files\image05.png" />
+      <None Remove="Assets\Cheer.mp3" />
+      <Resource Include="Assets\Cheer.mp3" />
     </ItemGroup>
 
 </Project>
