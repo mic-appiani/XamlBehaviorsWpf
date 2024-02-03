@@ -1,13 +1,4 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace XAMLBehaviorsSample.Net8;
 
@@ -16,8 +7,34 @@ namespace XAMLBehaviorsSample.Net8;
 /// </summary>
 public partial class MainWindow : Window
 {
+    private AnimationPage animationPage;
+    private ConditionPage conditionPage;
+    private DataPage dataPage;
+
     public MainWindow()
     {
         InitializeComponent();
+        this.animationPage = new AnimationPage();
+        this.conditionPage = new ConditionPage();
+        this.dataPage = new DataPage();
+        this.MainContent.Children.Add(this.animationPage);
+    }
+
+    private void AnimationButton_Click(object sender, RoutedEventArgs e)
+    {
+        this.MainContent.Children.Clear();
+        this.MainContent.Children.Add(this.animationPage);
+    }
+
+    private void ConditionalButton_Click(object sender, RoutedEventArgs e)
+    {
+        this.MainContent.Children.Clear();
+        this.MainContent.Children.Add(this.conditionPage);
+    }
+
+    private void DataBehaviorButton_Click(object sender, RoutedEventArgs e)
+    {
+        this.MainContent.Children.Clear();
+        this.MainContent.Children.Add(this.dataPage);
     }
 }
