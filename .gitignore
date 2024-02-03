@@ -36,3 +36,6 @@ _ReSharper*/
 
 # JustCode is a .NET coding add-in
 .JustCode
+
+# Jetbrains
+.idea/
