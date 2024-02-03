@@ -31,7 +31,8 @@
                         </TextBlock.Text>
                     </TextBlock>
                     <TextBlock TextWrapping="Wrap" Margin="10,20,0,0" FontSize="15" Foreground="DeepPink"
-                               xml:space="preserve">&lt;Button x:Name="button">
+                               xml:space="preserve">
+
                 </TextBlock>
                 </StackPanel>
             </ScrollViewer>

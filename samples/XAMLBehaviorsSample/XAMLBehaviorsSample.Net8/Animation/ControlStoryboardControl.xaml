@@ -12,10 +12,10 @@
         <Storyboard x:Key="StoryboardSample" AutoReverse="True" RepeatBehavior="Forever">
             <DoubleAnimation Duration="0:0:2.2" To="0.35"
                              Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)"
-                             Storyboard.TargetName="StoryboardRectangle" d:IsOptimized="True"/>
+                             Storyboard.TargetName="StoryboardRectangle" d:IsOptimized="True" />
             <DoubleAnimation Duration="0:0:2.2" To="0.35"
                              Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)"
-                             Storyboard.TargetName="StoryboardRectangle" d:IsOptimized="True"/>
+                             Storyboard.TargetName="StoryboardRectangle" d:IsOptimized="True" />
         </Storyboard>
     </UserControl.Resources>
 
@@ -35,37 +35,39 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <ScrollViewer Grid.Column="1" ScrollViewer.VerticalScrollBarVisibility="Auto" >
+            <ScrollViewer Grid.Column="1" ScrollViewer.VerticalScrollBarVisibility="Auto">
                 <StackPanel Grid.Column="1">
                     <TextBlock TextWrapping="Wrap" Margin="10,0,0,0" FontSize="20" Foreground="DarkGray">
                         <TextBlock.Text>
                             ControlStoryboardAction represents an action that will change the state of the specified Storyboard when executed.
-                    In this example, clicking the button triggers the ControlStoryboardAction to toggle playing and pausing a storyboard that changes the size of the rectangle.
+                            In this example, clicking the button triggers the ControlStoryboardAction to toggle playing and pausing a storyboard that changes the size of the rectangle.
                         </TextBlock.Text>
                     </TextBlock>
-                    <TextBlock TextWrapping="Wrap" Margin="10,20,0,0" FontSize="15" Foreground="DeepPink" xml:space="preserve">&lt;Behaviors:Interaction.Triggers>
-    &lt;Behaviors:EventTrigger EventName="Click">
-        &lt;Behaviors:ControlStoryboardAction Storyboard="{StaticResource StoryboardSample}" ControlStoryboardOption="TogglePlayPause"/>
-    &lt;/Behaviors:EventTrigger>
-&lt;/Behaviors:Interaction.Triggers></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Margin="10,20,0,0" FontSize="15" Foreground="DeepPink"
+                               xml:space="preserve">
+</TextBlock>
                 </StackPanel>
             </ScrollViewer>
 
-            <Grid Grid.Column="0"  Margin="0,0,10,0">
+            <Grid Grid.Column="0" Margin="0,0,10,0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="5*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5*" />
+                    <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <Rectangle x:Name="StoryboardRectangle" StrokeThickness="5" Fill="DeepPink" Stroke="LightYellow" RenderTransformOrigin="0.5,0.5" >
+                <Rectangle x:Name="StoryboardRectangle" StrokeThickness="5" Fill="DeepPink" Stroke="LightYellow"
+                           RenderTransformOrigin="0.5,0.5">
                     <Rectangle.RenderTransform>
                         <ScaleTransform />
                     </Rectangle.RenderTransform>
                 </Rectangle>
 
-                <Button x:Name="button" Content="Click Me" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Margin="0,10,0,10" d:LayoutOverrides="Width, Height" FontSize="20" Foreground="LightGray" Background="DarkGray" BorderBrush="LightYellow">
+                <Button x:Name="button" Content="Click Me" HorizontalAlignment="Stretch" Grid.Row="1"
+                        VerticalAlignment="Stretch" Margin="0,10,0,10" d:LayoutOverrides="Width, Height" FontSize="20"
+                        Foreground="LightGray" Background="DarkGray" BorderBrush="LightYellow">
                     <behaviors:Interaction.Triggers>
                         <behaviors:EventTrigger EventName="Click">
-                            <behaviors:ControlStoryboardAction Storyboard="{StaticResource StoryboardSample}" ControlStoryboardOption="TogglePlayPause"/>
+                            <behaviors:ControlStoryboardAction Storyboard="{StaticResource StoryboardSample}"
+                                                               ControlStoryboardOption="TogglePlayPause" />
                         </behaviors:EventTrigger>
                     </behaviors:Interaction.Triggers>
                 </Button>
