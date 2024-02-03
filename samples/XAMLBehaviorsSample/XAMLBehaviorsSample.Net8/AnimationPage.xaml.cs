@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using XAMLBehaviorsSample.Net8.Animation;
 
 namespace XAMLBehaviorsSample.Net8
 {
